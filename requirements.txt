@@ -9,6 +9,7 @@ ipython-genutils==0.2.0
 jsonschema==3.0.1
 jupyter-core==4.5.0
 kiwisolver==1.1.0
+matplotlib==3.1.0
 nbformat==4.4.0
 numpy==1.16.4
 pandas==0.24.2
@@ -26,3 +27,4 @@ sqlparse==0.3.0
 statsmodels==0.10.0
 traitlets==4.3.2
 urllib3==1.25.3
+whitenoise==4.1.2

@@ -1,1 +1,1 @@
-web gunicorn ubp:app
+web: gunicorn ubp.wsgi --logfile -
