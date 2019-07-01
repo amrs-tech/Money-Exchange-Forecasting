@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <style>
+        div{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 35px 5px 35px 5px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        input{
+            height: 17px;
+            width: 170px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        input[type=submit]{
+            background-color: rgba(200,200,200,0.8);
+            height: 22px;
+            width: 140px;
+            font-weight: 700;
+        }
+        span{
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h2>Exchange Rate Forecasting</h2></marquee>
+    <div align="center">
+        <form name="form" action="{% url 'app:data' %}" method = "post">
+            {% csrf_token %}
+            <input type="text" name = "start" placeholder=" Start Date"><br><span>(yyyy-mm-dd)</span><br><br>
+            <input type="text" name = "wait" placeholder=" Waiting time"><br><span>(no. of days)</span><br><br>
+            <input type="text" name = "amount" placeholder=" Amount"><br><br><br>
+            <input type="text" name = "base" placeholder=" Base Currency">&nbsp;<br><span>(eg:USD,INR,AUD,...)</span><br><br>
+            <input type="text" name = "target" placeholder=" Target Currency"><br><span>(eg:USD,INR,AUD,...)</span><br><br>
+            <input type="submit" value="PREDICT">
+
+        </form>
+    </div>
+</body>
+</html>

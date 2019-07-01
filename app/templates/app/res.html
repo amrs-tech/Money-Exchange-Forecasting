@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result sample</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        td, tr{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Rate</th>
+        </tr>
+    {% for i,j in d.items %}
+        <tr>
+            <td>{{i}}</td>
+            <td>{{j}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <br>
+    <a href="{% url 'app:graph' %}" target="_blank">Click here for the Graphical data</a>
+</body>
+</html>
