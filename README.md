@@ -12,4 +12,5 @@ Refer the requirements.txt file
 ## Modules
 1. First page displays the form for the user to fill in details to get historical data of exchange rates.
 2. The app will train the model with fetched data and forecast the rate for the future period provided by user.
-3. The output is displayed in table and chart for more spectacular visualization.
+3. The output is displayed in table in the second page.
+4. A chart is also produced for more spectacular understanding.
